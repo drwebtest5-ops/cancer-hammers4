@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANCER HAMMERS - Официальный сайт</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Bebas Neue', 'Impact', sans-serif;
+        }
+
+        :root {
+            --primary: #0a0a0a;
+            --secondary: #1a1a1a;
+            --accent: #ff0000;
+            --text: #ffffff;
+        }
+
+        body {
+            background: var(--primary);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 3px solid var(--accent);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                        url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .albums {
+            padding: 5rem 2rem;
+            background: var(--secondary);
+        }
+
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .album-card {
+            background: #000;
+            border: 2px solid var(--accent);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .album-cover {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: #000;
+            padding: 2rem;
+            text-align: center;
+            border-top: 2px solid var(--accent);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <div class="logo">CANCER HAMMERS</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>CANCER HAMMERS</h1>
+            <p>ГРОМ, СТАЛЬ И ПАНК-РОК</p>
+        </div>
+    </section>
+
+    <section class="albums">
+        <div class="albums-grid">
+            <div class="album-card">
+                <img src="https://i.imgur.com/ob8W8rA.png" alt="Self-Portrait" class="album-cover">
+                <h3>SELF-PORTRAIT</h3>
+                <p>2024 • 8 треков</p>
+                <a href="https://music.yandex.ru/album/38708892">СЛУШАТЬ</a>
+            </div>
+            <div class="album-card">
+                <img src="https://i.imgur.com/V1cY3bG.png" alt="Гаустный Молот" class="album-cover">
+                <h3>ГАУСТНЫЙ МОЛОТ</h3>
+                <p>2024 • 7 треков</p>
+                <a href="https://music.yandex.ru/album/38461870">СЛУШАТЬ</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 CANCER HAMMERS</p>
+        <p>hookings@cancerhammers.com</p>
+    </footer>
+</body>
+</html>
